@@ -1,0 +1,156 @@
+@media screen and (max-width: 1200px) {
+    .hero-area h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .row .col-40 {
+        width: 100%;
+    }
+    .row .col-50 {
+        width: 100%;
+    }
+    header {
+        padding: 40px 0 30px;
+    }
+    .hero-area {
+        text-align: center;
+        padding: 50px 0 80px;
+    }
+    .collections {
+        text-align: center;
+    }
+    .collection-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+    .navigation {
+        display: block;
+        position: absolute;
+        top: calc(100% + 30px);
+        left: 0;
+        transform: translateX(-100%);
+        background: #f6f8f9;
+        height: auto;
+        width: calc(100% - 40px);
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 9999;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    #menu:checked ~ .navigation {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .navigation li {
+        margin: 5px 0;
+    }
+    .navigation li a {
+        justify-content: center;
+    }
+    .m-none {
+        display: none;
+    }
+
+    .navbar label,
+    .cart,
+    .cart a {
+        display: flex;
+        color: var(--deep-dark-color);
+        cursor: pointer;
+    }
+
+    .navbar label .iconify,
+    .cart .iconify {
+        font-size: 28px;
+    }
+
+    #menu:checked ~ label {
+        color: var(--primary-color);
+    }
+    .collections {
+        padding: 100px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: calc(100% - 40px);
+    }
+
+    header {
+        padding: 30px 0;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero-area {
+        text-align: center;
+        padding: 30px 0 0;
+    }
+
+    .hero-area br {
+        display: none;
+    }
+
+    .hero-area h1 {
+        font-size: 28px;
+    }
+
+    .hero-area p {
+        font-weight: 500;
+    }
+
+    .partners {
+        display: none;
+    }
+
+    .collections {
+        padding: 80px 0;
+    }
+
+    .collections h2 {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .collection-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .collections .item {
+        padding: 25px 20px;
+    }
+
+    .collections .item a,
+    .collections .item h3 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+
+    footer h4 {
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+}

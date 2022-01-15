@@ -1,5 +1,5 @@
 /*======== Google Fonts =======*/
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@500;600;700&display=swap');
 
 /* 
 font-family: 'Inter', sans-serif;
@@ -29,8 +29,10 @@ font-family: 'Poppins', sans-serif;
     padding: 0;
 }
 
+html,
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -44,11 +46,6 @@ body {
 .cart {
     display: none;
 }
-/* 
-#menu:checked ~ .navigation {
-    display: none;
-}
-*/
 
 a {
     text-decoration: none;
@@ -96,7 +93,6 @@ a {
 header {
     height: auto;
     width: 100%;
-    overflow: hidden;
     padding: 70px 0 35px;
     background: var(--white-color);
 }
@@ -131,6 +127,11 @@ header {
     font-weight: 600;
     display: flex;
     align-items: center;
+    transition: all 0.3s;
+}
+
+.navigation li a:hover {
+    color: var(--primary-color);
 }
 
 header .iconify {
