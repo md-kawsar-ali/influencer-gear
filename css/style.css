@@ -12,6 +12,7 @@ font-family: 'Poppins', sans-serif;
 
 :root {
     --primary-color: #e02c6d;
+    --white-color: #ffffff;
     --dark-color: #3a3a3a;
     --deep-dark-color: #0a0826;
     --black-color: #000000;
@@ -32,6 +33,130 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    max-width: 1140px;
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+
+#menu,
+.navbar label,
+.cart {
+    display: none;
+}
+/* 
+#menu:checked ~ .navigation {
+    display: none;
+}
+*/
+
+a {
+    text-decoration: none;
+}
+
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.row .col-50 {
+    width: 52%;
+}
+
+.row .col-40 {
+    width: 42%;
+}
+
+.theme-btn {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    background: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.theme-btn .iconify {
+    margin-left: 8px;
+}
+
 /* ==================================
             Header Style
 ===================================== */
+header {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 70px 0 35px;
+    background: var(--white-color);
+}
+
+.logo {
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin-left: 25px;
+}
+
+.navigation li a {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+header .iconify {
+    font-size: 25px;
+}
+
+/* ==================================
+            Hero Area Style
+===================================== */
+
+.hero-area {
+    padding: 30px 0;
+}
+
+.hero-area h1 {
+    color: var(--dark-color);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero-area p {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 22px;
+}
