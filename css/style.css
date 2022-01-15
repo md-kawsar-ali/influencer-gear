@@ -290,3 +290,50 @@ header .iconify {
 .collections a .iconify {
     margin-left: 8px;
 }
+
+/* ==================================
+            Footer Style
+===================================== */
+footer {
+    padding: 80px 0;
+    color: var(--white-color);
+    background: var(--deep-dark-color);
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #dddddd;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline;
+    margin: 3px;
+}
+
+footer ul li a {
+    color: var(--white-color);
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 18px;
+    padding: 8px;
+    line-height: 0;
+    display: inline-block;
+    border-radius: 50%;
+}
